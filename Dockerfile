@@ -10,4 +10,4 @@ RUN apt-get -y update && \
 
 EXPOSE 8888
 
-CMD ["python /searx/searx/webapp.py"]
+CMD python /searx/searx/webapp.py
