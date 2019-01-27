@@ -12,4 +12,4 @@ WORKDIR /searx/
 
 EXPOSE 8888
 
-ENTRYPOINT ["python searx/webapp.py"]
+CMD ["python searx/webapp.py"]
