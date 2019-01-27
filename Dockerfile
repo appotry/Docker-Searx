@@ -8,8 +8,6 @@ RUN apt-get -y update && \
   pip install -r requirements.txt && \
   sed -i "s/ultrasecretkey/`openssl rand -hex 16`/g" searx/settings.yml
 
-WORKDIR /searx/
-
 EXPOSE 8888
 
-CMD ["python searx/webapp.py"]
+CMD ["python /searx/searx/webapp.py"]
